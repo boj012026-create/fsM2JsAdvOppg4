@@ -1,0 +1,6 @@
+.custum-button {
+  cursor: pointer;
+}
+.custom-button:disabled {
+  cursor: not-allowed;
+}
