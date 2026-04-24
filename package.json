@@ -2,11 +2,13 @@
   "name": "oppg4",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://github.com/boj012026-create/fsM2JsAdvOppg4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
