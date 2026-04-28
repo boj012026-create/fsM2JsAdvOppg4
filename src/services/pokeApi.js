@@ -6,9 +6,6 @@ const api = {
 	version2: "v2/",
 	pokeIndex: function(i) {
 		return `${this.baseUrl}${this.version2}pokemon/?offset=${i}&limit=1`;
-	},
-	pokemon: function(name) {
-		
 	}
 }
 
