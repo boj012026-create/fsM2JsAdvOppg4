@@ -16,6 +16,5 @@ document.querySelector('#app').innerHTML = `
 </section>
 `
 
-
 document.getElementById('button-container')
   .append(adviceBtn(document.getElementById('info-p')));
