@@ -1,4 +1,5 @@
 import { adviceApi } from "./../services/adviceApi.js"
+import { randPokemon } from "../services/pokeApi.js";
 
 export function adviceBtn(txtTarget, imgTarget) {
   const btn = document.createElement('button');
@@ -7,6 +8,7 @@ export function adviceBtn(txtTarget, imgTarget) {
 
   btn.addEventListener('click', async () => {
     txtTarget.textContent = await adviceApi(); 
+    randPokemon();
   });
   return btn;  
 }
