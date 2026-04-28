@@ -23,6 +23,6 @@ export async function randPokemon() {
 	console.log(pokeUrl) ;
 	const pokemon = await axios.get(pokeUrl);
 	console.log(pokemon.data);
-	return 
+	return pokemon.data; 
 }
 
