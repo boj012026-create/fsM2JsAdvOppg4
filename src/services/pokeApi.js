@@ -17,9 +17,9 @@ export async function randPokemon() {
 	const index = randInt(0, maxIndex);
 	const pokeIndex = await axios.get(api.pokeIndex(index));
 	const pokeUrl = pokeIndex.data.results[0].url;
-	console.log(pokeUrl) ;
+	//console.log(pokeUrl) ;
 	const pokemon = await axios.get(pokeUrl);
-	console.log(pokemon.data);
+	//console.log(pokemon.data);
 	return pokemon.data; 
 }
 

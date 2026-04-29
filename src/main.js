@@ -3,18 +3,20 @@ import viteLogo from './assets/vite.svg'
 import { adviceBtn } from "./components/advice-btn.js"
 
 document.querySelector('#app').innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img id="hero-img" src="${viteLogo}"   logo" />
-  </div>
+  <article class="hero">
+    <h2 id="advice-title" class="speech-bubble">Ask For Advice</h2>
+    <img id="hero-img" logo" />
+  </article>
   <div>
-    <h1>Project Title</h1>
-    <p id="info-p">This is where information get sent</p>
+    <p id="info-p" class="speech-bubble"></p>
   </div>
   <div id="button-container">
-  </dvi>
-</section>
+  </div>
 `
 
 document.getElementById('button-container')
-  .append(adviceBtn(document.getElementById('info-p')));
+  .append(adviceBtn(
+    document.getElementById('info-p'),
+    document.getElementById('hero-img'),
+    document.getElementById('advice-title')
+  ));
